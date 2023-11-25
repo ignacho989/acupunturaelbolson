@@ -1,0 +1,661 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 16px;
+
+}
+
+
+
+body {
+    background-image: url(images/medicina-tradicional-china.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: darken;
+    scroll-behavior: smooth;
+
+}
+
+header {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: rgb(244, 244, 245);
+    border-bottom: 2px solid rgb(126, 118, 118);
+    border-top: 2px solid rgb(126, 118, 118);
+
+}
+
+.titulo-cabecera {
+    color: rgb(39, 39, 42);
+    margin-top: 20px;
+    font-size: 7vw;
+    font-family: 'Marcellus', serif;
+}
+
+.subtitulo-cabecera {
+    color: rgb(39, 39, 42);
+    margin-bottom: 20px;
+    font-size: 3vw;
+    font-family: 'Marcellus', serif;
+
+}
+
+
+.navbar {
+    background-color: rgba(238, 236, 236, 0);
+    width: 100%;
+    z-index: 99;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1rem;
+    padding: 0px;
+    height: 40px;
+
+}
+
+
+
+
+
+.navbar li {
+    margin: 0px;
+
+}
+
+
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 60px;
+    background-color: rgba(238, 236, 236, 0.6);
+
+}
+
+.navbar-collapse p {
+    margin: 0;
+}
+
+.nav-item {
+    margin: 20px;
+}
+
+.nav-div {
+    width: 100%;
+}
+
+
+.primera-seccion {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.primario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.secundario {
+    width: 50%;
+    height: auto;
+}
+
+.hero {
+    background-color: rgba(255, 255, 255, 0.692);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5vw;
+
+}
+
+.reserva {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 70%;
+    padding: 5px;
+    margin: 20px;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: all 0.2s ease-in;
+}
+
+.reserva:hover {
+    background-color: rgba(8, 8, 8, 0.7);
+    color: white;
+    box-sizing: border-box;
+}
+
+.reserva p {
+    font-size: 3vw;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    margin: 0;
+    transition: all 0.2s ease-in;
+    width: 100%;
+    text-align: center;
+}
+
+.reserva a {
+    width: 100%;
+    text-decoration: none;
+}
+
+/* .reserva a {
+    text-decoration: none;
+} */
+
+.reserva p:hover {
+    color: white;
+}
+
+.parrafo-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+
+.segunda-seccion a {
+    text-decoration: none;
+}
+
+.segunda-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.segunda-seccion-titulo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 4vw;
+    color: rgba(255, 255, 255, 0.9);
+    height: auto;
+    padding: 55px;
+    margin: 0;
+
+}
+
+.segunda-seccion-sesiones {
+    font-family: 'Playfair Display', serif;
+    color: rgb(39, 39, 42);
+    background-color: rgb(217, 119, 6);
+    font-size: 3vw;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.2s ease-in;
+}
+
+.segunda-seccion-sesiones:hover {
+    background-color: rgba(15, 15, 15, 0.8);
+    color: rgba(212, 212, 212, 1)
+}
+
+
+.boton-sesiones {
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 10vw;
+    height: 100dvh;
+    border: 2px 2px solid black;
+}
+
+.div-terapias {
+    margin: 0;
+    width: 100%;
+    height: 20vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    border: 2px solid black;
+    transition: all 0.2s ease-in;
+}
+
+.div-terapias a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+.terapias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nuestras-terapias {
+    margin: 0;
+}
+
+.div-nuestras {
+    background-color: rgba(22, 22, 22, 0.8);
+    color: white;
+}
+
+.div-terapias p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 3vw;
+    margin: 0;
+
+}
+
+.fito:hover {
+    background-color: rgb(21, 128, 61);
+    color: white;
+}
+
+.acu:hover {
+    background-color: rgb(185, 28, 28);
+    color: white;
+}
+
+.vento:hover {
+    background-color: rgb(14, 116, 144);
+    color: white;
+}
+
+.sesiones-acupuntura {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 4rem;
+}
+
+.sesiones-acupuntura h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 6vw;
+    padding: 2rem;
+}
+
+.sesiones-descripcion {
+    font-size: 2.5vw;
+    padding: 2rem;
+}
+
+.div-sesiones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 251, 235, 0.9);
+    width: 90%;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+
+.comprar-sesiones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.descuento {
+    background-color: black;
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.boton-comprar {
+    width: 30%;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 0;
+    transition: all 0.2s ease-in;
+    text-align: center;
+}
+
+.boton-comprar:hover {
+    background-color: white;
+    color: black;
+}
+
+.bases {
+    font-size: 2vw;
+}
+
+.servicios-y-terapias {
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.582);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios-y-terapias-h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6vw;
+}
+
+.sec-terapias {
+    padding-bottom: 200px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 246, 244);
+}
+
+.terapias-h1 {
+    margin-top: 100px;
+    width: 100%;
+    height: 20vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vw;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-stretch: expanded;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.terapias-h2 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(22, 78, 99);
+    font-weight: bold;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    font-size: 4.5vw;
+    text-align: left;
+}
+
+.terapias-p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    line-height: 1.8rem;
+
+}
+
+.h2-p-boton {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-reserva {
+    margin: 3rem;
+    width: 50%;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in;
+    background-color: rgb(22, 78, 99);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.boton-principio {
+    width: 50%;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in;
+    background-color: rgb(75, 78, 80);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.boton-principio a {
+    text-decoration: none;
+    color: white;
+}
+
+.boton-principio:hover {
+    background-color: rgb(30, 33, 34);
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.boton-reserva a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+
+}
+
+.boton-reserva:hover {
+    background-color: rgba(22, 78, 99, 0.705);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+
+.ventosas {
+    background-image: url('images/cupping.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: rgba(0, 0, 0, 0.356);
+    background-blend-mode: multiply;
+}
+
+.fitoterapia {
+    background-image: url('images/fitoterapia.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: rgba(0, 0, 0, 0.356);
+    background-blend-mode: multiply;
+}
+
+.acupuntura {
+    background-image: url('images/acupuntura-general.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: rgba(0, 0, 0, 0.356);
+    background-blend-mode: multiply;
+}
+
+.accordion {
+    width: 95%;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    line-height: 1.8rem;
+}
+
+.accordion-button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    line-height: 1.8rem;
+}
+
+.bases-y-condiciones {
+    width: 100%;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+
+}
+
+
+.a-whatsapp {
+    position: fixed;
+    right: 0;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 2px;
+    border: 2px solid black;
+    transition: all 0.2s ease-in;
+
+}
+
+.a-whatsapp:hover {
+    border: 3px solid black;
+    background-color: rgb(37, 211, 102);
+
+}
+
+.bi-whatsapp {
+
+    font-size: 2rem;
+    color: black;
+    transition: all 0.2s ease-in;
+}
+
+.bi-whatsapp:hover {
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 10px;
+    }
+
+    .primario {
+        width: 100%;
+    }
+
+    .secundario {
+        width: 0;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    /* .titulo-cabecera {
+        font-size: 1.5rem;
+    }
+
+    .subtitulo-cabecera {
+        font-size: 0.75rem;
+    }
+
+    .parrafo-hero {
+        font-size: 1.5rem;
+    }
+
+    .reserva p {
+        font-size: 0.5rem;
+    }
+
+    .primera-seccion {
+        flex-direction: column;
+    } */
+
+}
+
+/* .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.7);
+
+} */
+
+/* @media screen and (max-width: 780px) {
+    .navbar-collapse {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 725px) {
+    .navbar li {
+        margin: 5px;
+        font-size: 1rem;
+    }
+} */
