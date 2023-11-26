@@ -30,7 +30,7 @@ header {
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: rgb(244, 244, 245);
+    background-color: rgb(255, 255, 255);
     border-bottom: 2px solid rgb(126, 118, 118);
     border-top: 2px solid rgb(126, 118, 118);
 
@@ -121,7 +121,7 @@ header {
 }
 
 .hero {
-    background-color: rgba(255, 255, 255, 0.692);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,7 +134,7 @@ header {
 }
 
 .reserva {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(117, 116, 116, 0.4);
     width: 70%;
     padding: 5px;
     margin: 20px;
@@ -218,8 +218,8 @@ header {
 
 .segunda-seccion-sesiones {
     font-family: 'Playfair Display', serif;
-    color: rgb(39, 39, 42);
-    background-color: rgb(217, 119, 6);
+    color: rgba(15, 15, 15, 0.8);
+    background-color: rgb(248, 248, 248);
     font-size: 3vw;
     margin: 0;
     padding: 30px;
@@ -299,26 +299,44 @@ header {
     align-content: center;
     text-align: center;
     width: 100%;
+    height: 100%;
     font-family: 'Playfair Display', sans-serif;
     font-size: 3vw;
     margin: 0;
+}
 
+.div-terapias a {
+    width: 100%;
+    height: 100%;
 }
 
 .fito:hover {
-    background-color: rgb(21, 128, 61);
+    background-color: rgba(15, 15, 15, 0.8);
+}
+
+.fito p:hover {
+    color: white;
+}
+
+.acu p:hover {
+    color: white;
+}
+
+.vento p:hover {
     color: white;
 }
 
 .acu:hover {
-    background-color: rgb(185, 28, 28);
+    background-color: rgba(15, 15, 15, 0.8);
     color: white;
 }
 
 .vento:hover {
-    background-color: rgb(14, 116, 144);
+    background-color: rgba(15, 15, 15, 0.8);
     color: white;
 }
+
+
 
 .sesiones-acupuntura {
     height: 100vh;
@@ -350,8 +368,7 @@ header {
     background-color: rgba(255, 251, 235, 0.9);
     width: 90%;
     height: auto;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+
 
 }
 
@@ -371,6 +388,7 @@ header {
     margin: 0;
     text-align: center;
     box-sizing: border-box;
+    border: 2px solid white;
 }
 
 .boton-comprar {
@@ -384,19 +402,24 @@ header {
     margin: 0;
     transition: all 0.2s ease-in;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .boton-comprar:hover {
     background-color: white;
     color: black;
+    border: 2px solid black;
+    box-sizing: border-box;
+
 }
 
 .bases {
     font-size: 2vw;
+    font-style: italic;
+    margin: 2rem;
 }
 
 .servicios-y-terapias {
-
     width: 100%;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.582);
@@ -406,7 +429,7 @@ header {
 }
 
 .servicios-y-terapias-h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
     font-size: 6vw;
 }
 
@@ -430,17 +453,17 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 8vw;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
     color: white;
     font-weight: bold;
     font-stretch: expanded;
     letter-spacing: 3px;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 .terapias-h2 {
     font-family: 'Roboto', sans-serif;
-    color: rgb(22, 78, 99);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     padding-top: 3rem;
     padding-left: 3rem;
@@ -468,52 +491,69 @@ header {
 
 .boton-reserva {
     margin: 3rem;
-    width: 50%;
-    height: 8vw;
+    width: 40%;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease-in;
-    background-color: rgb(22, 78, 99);
-    font-family: 'Roboto', sans-serif;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', sans-serif;
     font-size: 2vw;
     font-weight: bold;
 }
 
 .boton-principio {
-    width: 50%;
-    height: 8vw;
+    width: 40%;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease-in;
-    background-color: rgb(75, 78, 80);
-    font-family: 'Roboto', sans-serif;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', sans-serif;
     font-size: 2vw;
     font-weight: bold;
 }
 
 .boton-principio a {
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .boton-principio:hover {
-    background-color: rgb(30, 33, 34);
-
+    background-color: rgb(255, 255, 255);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
 
+.boton-principio a:hover {
+    color: rgb(0, 0, 0);
 }
 
 .boton-reserva a {
+    width: 100%;
+    height: 100%;
     text-decoration: none;
-    color: rgb(211, 211, 211);
-
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .boton-reserva:hover {
-    background-color: rgba(22, 78, 99, 0.705);
+    background-color: rgba(255, 255, 255, 0.705);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.boton-reserva a:hover {
+    color: rgb(10, 10, 10);
 
 }
 
@@ -564,7 +604,10 @@ header {
     padding: 2rem;
     background-color: black;
     color: white;
+}
 
+.bases-y-condiciones h1 {
+    margin-bottom: 2rem;
 }
 
 
