@@ -146,7 +146,6 @@ header {
 .reserva {
     background-color: rgb(255, 255, 255);
     width: 50%;
-    padding: 5px;
     margin: 20px;
     align-content: center;
     display: flex;
@@ -154,6 +153,9 @@ header {
     align-content: center;
     justify-content: center;
     transition: all 0.2s ease-in;
+    border: 4px solid black;
+    box-sizing: border-box;
+
 }
 
 .reserva:hover {
@@ -163,12 +165,14 @@ header {
 }
 
 .reserva p {
-    font-size: clamp(1.5rem, 2vw, 3.5rem);
+    font-size: 2rem;
+    padding: 1rem;
     font-family: 'Playfair Display', serif;
     color: black;
     margin: 0;
     transition: all 0.2s ease-in;
     width: 100%;
+    height: 100%;
     text-align: center;
 }
 
@@ -301,11 +305,22 @@ header {
 
 .boton-sesiones {
     box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+.div-boton-sesiones {
     width: 50%;
     height: auto;
-    margin: 1rem;
-    text-decoration: none;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid black;
 }
 
 .servicios {
@@ -328,7 +343,8 @@ header {
 .div-terapias {
     margin: 0;
     width: 100%;
-    height: 5rem;
+    height: 100%;
+    padding: 1rem;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -460,7 +476,7 @@ header {
     align-items: center;
     justify-content: center;
     min-height: 5rem;
-    border: 2px solid black;
+    border: 4px solid black;
 }
 
 .descuento {
@@ -475,6 +491,7 @@ header {
     text-align: center;
     display: flex;
     align-items: center;
+
 }
 
 .boton-comprar {
@@ -489,7 +506,7 @@ header {
     margin: 0;
     transition: all 0.2s ease-in;
     text-align: center;
-    border-left: 2px solid black;
+    border-left: 4px solid black;
 }
 
 .boton-comprar:hover {
@@ -504,52 +521,7 @@ header {
     margin: 2rem;
 }
 
-/* .servicios-y-terapias {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.582);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
-/* .servicios-y-terapias-h1 {
-    font-family: 'Playfair Display', sans-serif;
-    font-size: 2rem;
-} */
-
-/* .separacion {
-    height: 7rem;
-    background-color: rgb(255, 255, 255);
-} */
-
-/* .sec-terapias {
-    padding-bottom: 200px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(248, 246, 244);
-} */
-
-/* .terapias-h1 {
-    margin-block: 3rem black;
-    width: 100%;
-    height: 10rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: clamp(2rem, 3rem, 4.5rem);
-    font-family: 'Playfair Display', sans-serif;
-    color: white;
-    font-weight: bold;
-    font-stretch: expanded;
-    letter-spacing: 3px;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
-} */
 
 .terapias-h2 {
     font-family: 'Playfair Display', sans-serif;
@@ -561,38 +533,52 @@ header {
     max-width: 50%;
 }
 
-/* .img-h2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-} */
+
 
 .img-servicios {
     width: min(60vw, 35rem);
     height: auto;
-    /* border-radius: 10px; */
-    /* filter: grayscale(100%); */
     border: 2px solid black;
 }
 
 
-.boton-servicios a {
+.boton-servicios {
     text-decoration: none;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    margin-block: 2rem;
 }
 
-.p-servicios {
+.boton-servicios a {
+    text-decoration: none;
     width: 100%;
     font-family: 'Playfair Display', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
     border: 2px solid black;
     padding: 1rem;
     transition: all 0.2s ease-in;
+    margin: 0;
+    text-align: center;
 }
 
-.p-servicios:hover {
+.p-servicios {
+    margin: 0;
+    width: 100%;
+    /* 
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2rem;
+    color: black;
+    border: 2px solid black;
+    padding: 1rem;
+    transition: all 0.2s ease-in; */
+}
+
+.boton-servicios a:hover {
     color: white;
     background-color: black;
 }
@@ -601,84 +587,6 @@ header {
     margin-bottom: 0;
 
 }
-
-/* .h2-p-boton {
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .boton-reserva {
-    margin-top: 1rem;
-    margin: 1rem;
-    width: 50%;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease-in;
-    background-color: rgb(0, 0, 0);
-    font-family: 'Playfair Display', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-} */
-
-/* .boton-principio {
-    margin: 1rem;
-    width: 50%;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease-in;
-    background-color: rgb(0, 0, 0);
-    font-family: 'Playfair Display', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-} */
-
-/* .boton-principio a {
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .boton-principio:hover {
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-} */
-
-/* .boton-principio a:hover {
-    color: rgb(0, 0, 0);
-} */
-
-/* .boton-reserva a {
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .boton-reserva:hover {
-    background-color: rgba(255, 255, 255, 0.705);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-} */
-
-/* .boton-reserva a:hover {
-    color: rgb(10, 10, 10);
-
-} */
 
 
 .ventosas {
